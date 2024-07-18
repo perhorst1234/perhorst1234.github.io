@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Self-Hosted Apps voor Familie</title>
+  <title>Schermer42 Apps</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
   <style>
     body, html {
@@ -82,13 +82,13 @@
         <img src="jellyfin.png" alt="Jellyfin">
         <h3>Jellyfin</h3>
         <a href="https://jellyfin.org" target="_blank">Open Jellyfin</a>
-        <p>Username: user12 <br> Password: pass123</p>
+        <p>Username: Horstjes <br> Password: Ster2006</p>
       </div>
       <div class="app">
         <img src="jellyseerr.png" alt="Jellyseerr">
         <h3>Jellyseerr</h3>
         <a href="https://github.com/Fallenbagel/jellyseerr" target="_blank">Open Jellyseerr</a>
-        <p>Username: user456 <br> Password: pass456</p>
+        <p>Username: Horstjes <br> Password: Ster2006</p>
       </div>
       <div class="app">
         <img src="immich.png" alt="Immich">
