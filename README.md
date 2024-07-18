@@ -7,12 +7,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
   <style>
     body {
-      background: linear-gradient(45deg, #fffacd, #ffefd5, #ffdab9);
-      background-size: 600% 600%;
-      animation: gradientAnimation 15s ease infinite;
+      background: linear-gradient(45deg, #f3ec78, #af4261, #f3ec78, #af4261);
+      background-size: 400% 400%;
+      animation: waveBackground 15s ease infinite;
     }
 
-    @keyframes gradientAnimation {
+    @keyframes waveBackground {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
@@ -27,15 +27,27 @@
     }
 
     .app {
+      background: rgba(255, 255, 255, 0.8);
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
       text-align: center;
       flex: 1 1 calc(25% - 40px);
       max-width: calc(25% - 40px);
       min-width: 200px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .app:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     }
 
     .app img {
       max-width: 100%;
       height: auto;
+      border-radius: 4px;
     }
 
     .app h3 {
@@ -66,6 +78,8 @@
       border: 1px solid #888;
       width: 80%;
       max-width: 500px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
     .close {
@@ -140,7 +154,8 @@
   </div>
 
   <script>
-    document.getElementById('helpLink').onclick = function() {
+    document.getElementById('helpLink').onclick = function(event) {
+      event.preventDefault();
       document.getElementById('myModal').style.display = 'block';
     }
 
