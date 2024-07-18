@@ -53,19 +53,19 @@
         </hgroup>
         <div class="app-container">
           <div class="app">
-            <img src="https://iconduck.com/icons/14121/jellyfin" alt="Jellyfin">
+            <img src="jellyfin.png" alt="Jellyfin">
             <h3>Jellyfin</h3>
             <a href="https://jellyfin.org" target="_blank">Open Jellyfin</a>
             <p>Username: user123 <br> Password: pass123</p>
           </div>
           <div class="app">
-            <img src="https://iconduck.com/icons/252954/jellyseerr" alt="Jellyseerr">
+            <img src="jellyseerr.png" alt="Jellyseerr">
             <h3>Jellyseerr</h3>
             <a href="https://github.com/Fallenbagel/jellyseerr" target="_blank">Open Jellyseerr</a>
             <p>Username: user456 <br> Password: pass456</p>
           </div>
           <div class="app">
-            <img src="https://play-lh.googleusercontent.com/AlexTranImmichIcon=w240-h480-rw" alt="Immich">
+            <img src="immich.png" alt="Immich">
             <h3>Immich</h3>
             <a href="https://immich.app" target="_blank">Open Immich</a>
             <p>Username: user789 <br> Password: pass789</p>
