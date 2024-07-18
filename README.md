@@ -53,7 +53,7 @@
         </hgroup>
         <div class="app-container">
           <div class="app">
-            <img src="https://iconduck.com/icons/14121/jellyfin" alt="Jellyfin">
+            <img src="https://raw.githubusercontent.com/wiki/jellyfin/jellyfin/images/jellyfin-icon.png" alt="Jellyfin">
             <h3>Jellyfin</h3>
             <a href="https://jellyfin.org" target="_blank">Open Jellyfin</a>
             <p>Username: user123 <br> Password: pass123</p>
@@ -80,7 +80,6 @@
       </section>
     </div>
   </main>
-
 
   <footer class="container">
     <small><a href="#">Privacybeleid</a> • <a href="#">Contact</a></small>
