@@ -1,121 +1,104 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Selfhosted Apps</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <style>
-        .app-icon {
-            width: 100px;
-            height: 100px;
-        }
-        .app-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
-        .app {
-            text-align: center;
-            margin: 20px;
-        }
-        .app a {
-            display: block;
-            margin-top: 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Self-Hosted Apps voor Familie</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    .app-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .app {
+      text-align: center;
+      flex: 1 1 calc(25% - 40px);
+      max-width: calc(25% - 40px);
+      min-width: 200px;
+    }
+    .app img {
+      max-width: 100%;
+      height: auto;
+    }
+    .app h3 {
+      margin: 10px 0;
+    }
+    .app a {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-    <nav class="container-fluid">
-        <ul>
-            <li><strong>Selfhosted Apps</strong></li>
-        </ul>
-        <ul>
-            <li><a href="#jellyfin">Jellyfin</a></li>
-            <li><a href="#jellyseerr">Jellyseerr</a></li>
-            <li><a href="#immich">Immich</a></li>
-            <li><a href="#nas-schermer42">NAS Schermer42</a></li>
-        </ul>
-    </nav>
-    <main class="container">
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>Familie Apps</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#" role="button">Help</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div class="grid">
+      <section>
+        <hgroup>
+          <h2>Overzicht van Self-Hosted Apps</h2>
+          <h3>Klik op een app voor meer informatie</h3>
+        </hgroup>
         <div class="app-container">
-            <section id="jellyfin" class="app">
-                <hgroup>
-                    <h2>Jellyfin</h2>
-                </hgroup>
-                <figure>
-                    <img src="https://iconduck.com/icons/14121/jellyfin" alt="Jellyfin Icon" class="app-icon">
-                    <figcaption>
-                        <a href="https://iconduck.com/icons/14121/jellyfin" target="_blank">Jellyfin</a>
-                    </figcaption>
-                </figure>
-                <a href="https://jellyfin.org/" role="button">Go to Jellyfin</a>
-            </section>
-
-            <section id="jellyseerr" class="app">
-                <hgroup>
-                    <h2>Jellyseerr</h2>
-                </hgroup>
-                <figure>
-                    <img src="https://iconduck.com/icons/252954/jellyseerr" alt="Jellyseerr Icon" class="app-icon">
-                    <figcaption>
-                        <a href="https://iconduck.com/icons/252954/jellyseerr" target="_blank">Jellyseerr</a>
-                    </figcaption>
-                </figure>
-                <a href="https://jellyseerr.com/" role="button">Go to Jellyseerr</a>
-            </section>
-
-            <section id="immich" class="app">
-                <hgroup>
-                    <h2>Immich</h2>
-                </hgroup>
-                <figure>
-                    <img src="https://play.google.com/store/apps/details?id=app.alextran.immich" alt="Immich Icon" class="app-icon">
-                    <figcaption>
-                        <a href="https://play.google.com/store/apps/details?id=app.alextran.immich" target="_blank">Immich</a>
-                    </figcaption>
-                </figure>
-                <a href="https://immich.app/" role="button">Go to Immich</a>
-            </section>
-
-            <section id="nas-schermer42" class="app">
-                <hgroup>
-                    <h2>NAS Schermer42</h2>
-                </hgroup>
-                <figure>
-                    <img src="https://www.flaticon.com/free-icon/nas_4943821" alt="NAS Icon" class="app-icon">
-                    <figcaption>
-                        <a href="https://www.flaticon.com/free-icon/nas_4943821" target="_blank">NAS Schermer42</a>
-                    </figcaption>
-                </figure>
-                <a href="#" role="button" onclick="showInstructions()">Get Instructions</a>
-            </section>
+          <div class="app">
+            <img src="https://iconduck.com/icons/14121/jellyfin" alt="Jellyfin">
+            <h3>Jellyfin</h3>
+            <a href="https://jellyfin.org" target="_blank">Open Jellyfin</a>
+            <p>Username: user123 <br> Password: pass123</p>
+          </div>
+          <div class="app">
+            <img src="https://iconduck.com/icons/252954/jellyseerr" alt="Jellyseerr">
+            <h3>Jellyseerr</h3>
+            <a href="https://github.com/Fallenbagel/jellyseerr" target="_blank">Open Jellyseerr</a>
+            <p>Username: user456 <br> Password: pass456</p>
+          </div>
+          <div class="app">
+            <img src="https://play-lh.googleusercontent.com/ImmichAppIcon" alt="Immich">
+            <h3>Immich</h3>
+            <a href="https://immich.app" target="_blank">Open Immich</a>
+            <p>Username: user789 <br> Password: pass789</p>
+          </div>
+          <div class="app">
+            <img src="https://cdn-icons-png.flaticon.com/512/4943/4943821.png" alt="NAS Schermer42">
+            <h3>NAS Schermer42</h3>
+            <a href="#" target="_blank">Instructies voor NAS</a>
+            <p>Username: nasuser <br> Password: naspass</p>
+          </div>
         </div>
-    </main>
-    <section aria-label="Subscribe example">
-        <div class="container">
-            <article>
-                <hgroup>
-                    <h2>Subscribe</h2>
-                    <h3>Stay updated with our latest news</h3>
-                </hgroup>
-                <form class="grid">
-                    <input type="text" id="firstname" name="firstname" placeholder="First Name" aria-label="First Name" required />
-                    <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
-                    <button type="submit" onclick="event.preventDefault()">Subscribe</button>
-                </form>
-            </article>
-        </div>
-    </section>
-    <footer class="container">
-        <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></small>
-    </footer>
+      </section>
+    </div>
+  </main>
 
-    <script>
-        function showInstructions() {
-            alert("To access NAS Schermer42, follow these instructions:\n1. Connect to the network.\n2. Open your file explorer.\n3. Enter the address \\NAS-SCHERMER42.\n4. Use the provided username and password.");
-        }
-    </script>
+  <section aria-label="Subscribe example">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Abonneer je op updates</h2>
+          <h3>Blijf op de hoogte van nieuwe functies en updates</h3>
+        </hgroup>
+        <form class="grid">
+          <input type="text" id="firstname" name="firstname" placeholder="Voornaam" aria-label="Voornaam" required />
+          <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
+          <button type="submit" onclick="event.preventDefault()">Abonneer</button>
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <footer class="container">
+    <small><a href="#">Privacybeleid</a> • <a href="#">Contact</a></small>
+  </footer>
 </body>
 </html>
