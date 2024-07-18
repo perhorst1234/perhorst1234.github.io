@@ -81,21 +81,6 @@
     </div>
   </main>
 
-  <section aria-label="Subscribe example">
-    <div class="container">
-      <article>
-        <hgroup>
-          <h2>Abonneer je op updates</h2>
-          <h3>Blijf op de hoogte van nieuwe functies en updates</h3>
-        </hgroup>
-        <form class="grid">
-          <input type="text" id="firstname" name="firstname" placeholder="Voornaam" aria-label="Voornaam" required />
-          <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
-          <button type="submit" onclick="event.preventDefault()">Abonneer</button>
-        </form>
-      </article>
-    </div>
-  </section>
 
   <footer class="container">
     <small><a href="#">Privacybeleid</a> • <a href="#">Contact</a></small>
