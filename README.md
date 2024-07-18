@@ -6,6 +6,18 @@
   <title>Self-Hosted Apps voor Familie</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
   <style>
+    body {
+      background: linear-gradient(45deg, #fffacd, #ffefd5, #ffdab9);
+      background-size: 600% 600%;
+      animation: gradientAnimation 15s ease infinite;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
     .app-container {
       display: flex;
       flex-wrap: wrap;
@@ -13,22 +25,61 @@
       justify-content: center;
       margin-top: 20px;
     }
+
     .app {
       text-align: center;
       flex: 1 1 calc(25% - 40px);
       max-width: calc(25% - 40px);
       min-width: 200px;
     }
+
     .app img {
       max-width: 100%;
       height: auto;
     }
+
     .app h3 {
       margin: 10px 0;
     }
+
     .app a {
       display: block;
       margin-top: 10px;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 500px;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -40,7 +91,7 @@
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">Contact</a></li>
-      <li><a href="#" role="button">Help</a></li>
+      <li><a href="#" role="button" id="helpLink">Help</a></li>
     </ul>
   </nav>
 
@@ -80,3 +131,28 @@
       </section>
     </div>
   </main>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="helpText">Help text goes here. You can edit this later.</p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('helpLink').onclick = function() {
+      document.getElementById('myModal').style.display = 'block';
+    }
+
+    document.getElementsByClassName('close')[0].onclick = function() {
+      document.getElementById('myModal').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      if (event.target == document.getElementById('myModal')) {
+        document.getElementById('myModal').style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
