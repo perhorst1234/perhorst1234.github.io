@@ -56,7 +56,7 @@
             <img src="jellyfin.png" alt="Jellyfin">
             <h3>Jellyfin</h3>
             <a href="https://jellyfin.org" target="_blank">Open Jellyfin</a>
-            <p>Username: user123 <br> Password: pass123</p>
+            <p>Username: user12 <br> Password: pass123</p>
           </div>
           <div class="app">
             <img src="jellyseerr.png" alt="Jellyseerr">
@@ -80,9 +80,3 @@
       </section>
     </div>
   </main>
-
-  <footer class="container">
-    <small><a href="#">Privacybeleid</a> • <a href="#">Contact</a></small>
-  </footer>
-</body>
-</html>
